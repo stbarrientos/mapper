@@ -1,0 +1,15 @@
+<ul>
+	<%= form_for @pin do |p| %>
+	<li>
+		<%= p.label :lat, 'latitude' %>
+		<%= p.text_field :lat %>
+	</li>
+	<li>
+		<%= p.label :long, 'longitude' %>
+		<%= p.text_field :long %>
+	</li>
+	<li>
+		<%= p.submit %>
+	</li>
+	<% end %>
+</ul>
